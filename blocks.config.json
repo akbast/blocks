@@ -1,6 +1,15 @@
 [
   {
     "type": "file",
+    "id": "stats-block",
+    "title": "Stats Block",
+    "description": "A basic stats block",
+    "entry": "blocks/stats-block/index.tsx",
+    "matches": ["*"],
+    "example_path": "https://github.com/akbast/blocks/"
+  },
+  {
+    "type": "file",
     "id": "file-block",
     "title": "Example File Block",
     "description": "A basic file block",
