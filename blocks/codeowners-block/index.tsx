@@ -8,6 +8,20 @@ export default function (props: FileBlockProps) {
     ? getLanguageFromFilename(context.path)
     : "N/A";
 
+  const lines = content.split(/\r\n|\r|\n/);
+  let ownerEntries = []
+  for (const line of lines) {
+    if (line.startsWith("#")) {
+      continue;
+    }
+    const [path, ...owners] = line.split(/\s+/);
+    ownerEntries.push({ owners, path });
+
+    
+  }
+
+  ownerEntries = ownerEntries.reverse();
+
   return (
     <Box p={4}>
       <Box
@@ -28,7 +42,8 @@ export default function (props: FileBlockProps) {
         </Box>
         <Box p={4}>
           <p>Use json to draw some graphics</p>
-
+          content: {content}
+          <p>ownerEntries: {JSON.stringify(ownerEntries)}</p>
         </Box>
       </Box>
     </Box>

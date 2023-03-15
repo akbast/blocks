@@ -5,16 +5,7 @@
     "title": "Codeowners Block",
     "description": "Visualize codeowners",
     "entry": "blocks/codeowners-block/index.tsx",
-    "matches": ["Codeowners"],
-    "example_path": "https://github.com/akbast/blocks/codeowners-block"
-  },
-  {
-    "type": "file",
-    "id": "stats-block",
-    "title": "Stats Block",
-    "description": "A basic stats block",
-    "entry": "blocks/stats-block/index.tsx",
-    "matches": ["*"],
+    "matches": ["*CODEOWNERS*"],
     "example_path": "https://github.com/akbast/blocks/"
   },
   {

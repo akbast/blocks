@@ -1,1 +1,9 @@
 * akbast
+
+*.json floriankoch
+
+*.yml ccampo
+
+test_folder_one akbast
+
+test_folder_two ccampo, akbast
