@@ -1,3 +1,7 @@
+# Testing Copilot for PRs
+
+How does it work?
+
 # GitHub Blocks Template
 
 Use this repository as a starter template for building your own Blocks.
