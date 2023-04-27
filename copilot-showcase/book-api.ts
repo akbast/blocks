@@ -22,4 +22,9 @@ export class BookApi {
     public async deleteBook(id: number): Promise<void> {
         await axios.delete(`/api/books/${id}`);
     }
+
+    public async updateBook(book: Book): Promise<Book> {
+        const response = await axios.put<Book>(`/api/books/${book.id}`, book);
+        return response.data;
+    }
 }
