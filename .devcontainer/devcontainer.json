@@ -1,0 +1,26 @@
+{
+	"name": "akbast/blocks",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:16",
+	"forwardPorts": [
+	],
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"GitHub.codespaces",
+				"github.copilot",
+				"mhutchie.git-graph",
+				"humao.rest-client",
+				"bierner.markdown-mermaid"
+			]
+		}
+	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "dotnet restore",
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode",
+	"features": {
+	}
+}
